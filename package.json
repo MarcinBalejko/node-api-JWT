@@ -4,7 +4,8 @@
   "description": "This project is just an exercise based on building a Node.js API that is going to handle authentication with JWT. It uses MongoDB for database, Mongoose for creating models and to connect to our Express server, and also bcryptjs to hash passwords.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
