@@ -1,7 +1,5 @@
 const jwt = require('jsonwebtoken');
 
-// Created a middleware that we can add to any route we want to be protected
-// and not let users without token to access
 module.exports = function(req, res, next) {
   const token = req.header('auth-token');
   if (!token) return res.status(401).send('Access Denied');
